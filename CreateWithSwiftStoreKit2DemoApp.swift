@@ -12,6 +12,7 @@ struct CreateWithSwiftStoreKit2DemoApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .createWithSwiftStore()
         }
     }
 }
