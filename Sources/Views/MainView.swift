@@ -10,16 +10,16 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-                    Tab("Non-Consumable", systemImage: "eurosign.circle.fill") {
-                        NonConsumableInAppPurchaseView()
-                    }
-                    Tab("Consumable", systemImage: "fork.knife.circle.fill") {
-                        ConsumableInAppPurchaseView()
-                    }
-                    Tab("Subscription", systemImage: "eurosign.arrow.trianglehead.counterclockwise.rotate.90") {
-                        SubscriptionInAppPurchaseView()
-                    }
-                }
+            Tab("Non-Consumable", systemImage: "eurosign.circle.fill") {
+                NonConsumableInAppPurchaseView()
+            }
+            Tab("Consumable", systemImage: "fork.knife.circle.fill") {
+                ConsumableInAppPurchaseView()
+            }
+            Tab("Subscription", systemImage: "eurosign.arrow.trianglehead.counterclockwise.rotate.90") {
+                SubscriptionInAppPurchaseView()
+            }
+        }
     }
 }
 
