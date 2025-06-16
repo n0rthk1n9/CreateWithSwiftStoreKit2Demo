@@ -132,8 +132,8 @@
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "",
-              "displayName" : "",
+              "description" : "Support your favorite Swift meetup 😍🙌",
+              "displayName" : "Meetup Support Bronze",
               "locale" : "en_US"
             }
           ],
@@ -155,13 +155,13 @@
           ],
           "displayPrice" : "4.99",
           "familyShareable" : false,
-          "groupNumber" : 1,
+          "groupNumber" : 2,
           "internalID" : "2AB4FC33",
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "",
-              "displayName" : "",
+              "description" : "Treat them with a 🍕",
+              "displayName" : "Meetup Support Silver",
               "locale" : "en_US"
             }
           ],
@@ -183,13 +183,13 @@
           ],
           "displayPrice" : "14.99",
           "familyShareable" : false,
-          "groupNumber" : 2,
+          "groupNumber" : 3,
           "internalID" : "FDB56FF0",
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "",
-              "displayName" : "",
+              "description" : "Sponser some 🍺",
+              "displayName" : "Meetup Support Gold",
               "locale" : "en_US"
             }
           ],

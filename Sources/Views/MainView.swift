@@ -17,7 +17,7 @@ struct MainView: View {
                 ConsumableInAppPurchaseView()
             }
             Tab("Subscription", systemImage: "eurosign.arrow.trianglehead.counterclockwise.rotate.90") {
-                SubscriptionInAppPurchaseView()
+                ProfileView()
             }
         }
     }
