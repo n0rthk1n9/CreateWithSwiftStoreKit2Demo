@@ -40,8 +40,23 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "dev.xbow.CocoaStore.starEmoji",
+      "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.StarEmoji",
       "referenceName" : "Star Emoji",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "C21D1FB0",
+      "localizations" : [
+        {
+          "description" : "Show your love for Napoli with the 🩵",
+          "displayName" : "A light blue heart emoji",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.NapoliEmoji",
+      "referenceName" : "Napoli Emoji",
       "type" : "Consumable"
     }
   ],
