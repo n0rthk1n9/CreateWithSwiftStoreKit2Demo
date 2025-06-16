@@ -25,7 +25,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo",
+      "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.Picture",
       "referenceName" : "Picture Create with Swift Napoli Meetup #4",
       "type" : "NonConsumable"
     }

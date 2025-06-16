@@ -12,15 +12,10 @@
 
 /* Begin PBXFileReference section */
 		0A0C56EE2E004E190085321C /* CreateWithSwiftStoreKit2DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWithSwiftStoreKit2DemoApp.swift; sourceTree = "<group>"; };
-		0A0C58322E004F010085321C /* CreateWithSwiftStoreKit2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CreateWithSwiftStoreKit2Demo.app; path = "/Users/n0rthk1n9-m3/Coding/private/CreateWithSwiftStoreKit2Demo/build/Debug-iphoneos/CreateWithSwiftStoreKit2Demo.app"; sourceTree = "<absolute>"; };
+		0A361F492E0052A8004F5218 /* CreateWithSwiftStoreKit2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CreateWithSwiftStoreKit2Demo.app; path = "/Users/n0rthk1n9-m3/Coding/private/CreateWithSwiftStoreKit2Demo/build/Debug-iphoneos/CreateWithSwiftStoreKit2Demo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0A0C56ED2E004E190085321C /* CreateWithSwiftStoreKit2Demo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CreateWithSwiftStoreKit2Demo;
-			sourceTree = "<group>";
-		};
 		0A0C57932E004E7B0085321C /* Ressources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ressources;
@@ -49,7 +44,6 @@
 			children = (
 				0A0C56EE2E004E190085321C /* CreateWithSwiftStoreKit2DemoApp.swift */,
 				0A0C57932E004E7B0085321C /* Ressources */,
-				0A0C56ED2E004E190085321C /* CreateWithSwiftStoreKit2Demo */,
 				0A0C582F2E004E9F0085321C /* Sources */,
 			);
 			sourceTree = "<group>";
@@ -70,7 +64,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0A0C56ED2E004E190085321C /* CreateWithSwiftStoreKit2Demo */,
 				0A0C57932E004E7B0085321C /* Ressources */,
 				0A0C582F2E004E9F0085321C /* Sources */,
 			);
@@ -78,7 +71,7 @@
 			packageProductDependencies = (
 			);
 			productName = CreateWithSwiftStoreKit2Demo;
-			productReference = 0A0C58322E004F010085321C /* CreateWithSwiftStoreKit2Demo.app */;
+			productReference = 0A361F492E0052A8004F5218 /* CreateWithSwiftStoreKit2Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

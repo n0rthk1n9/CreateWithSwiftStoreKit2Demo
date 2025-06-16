@@ -6,5 +6,5 @@
 //
 
 enum ProductID: String {
-  case meetupPicture = "dev.xbow.CreateWithSwiftStoreKit2Demo"
+  case meetupPicture = "dev.xbow.CreateWithSwiftStoreKit2Demo.Picture"
 }
