@@ -28,6 +28,21 @@
       "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.Picture",
       "referenceName" : "Picture Create with Swift Napoli Meetup #4",
       "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "722A3DA2",
+      "localizations" : [
+        {
+          "description" : "Show your love for Create with Swift with the ⭐",
+          "displayName" : "A star emoji",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "dev.xbow.CocoaStore.starEmoji",
+      "referenceName" : "Star Emoji",
+      "type" : "Consumable"
     }
   ],
   "settings" : {
