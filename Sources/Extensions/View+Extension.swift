@@ -8,7 +8,11 @@
 import SwiftUI
 
 extension View {
-  func createWithSwiftMeetupStore() -> some View {
-    modifier(CreateWithSwiftMeetupStoreViewModifier())
-  }
+    func createWithSwiftMeetupStore() -> some View {
+        modifier(CreateWithSwiftMeetupStoreViewModifier())
+    }
+
+    func subscriptionPassStatusTask() -> some View {
+        modifier(SubscriptionStatusTaskViewModifier())
+    }
 }
