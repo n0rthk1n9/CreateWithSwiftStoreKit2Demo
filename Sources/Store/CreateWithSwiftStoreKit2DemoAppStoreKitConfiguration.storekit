@@ -111,7 +111,99 @@
     ]
   },
   "subscriptionGroups" : [
+    {
+      "id" : "921A802D",
+      "localizations" : [
 
+      ],
+      "name" : "Create with Swift Napoli Meetup Support Subscription",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "CB24BF5E",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Support your favorite Swift meetup 😍🙌",
+              "displayName" : "Meetup Support Bronze",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.meetupSupportBronze",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Create with Swift Napoli Meetup Support Bronze",
+          "subscriptionGroupID" : "921A802D",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "2AB4FC33",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Treat them with a 🍕",
+              "displayName" : "Meetup Support Silver",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.meetupSupportSilver",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Create with Swift Napoli Meetup Support Silver",
+          "subscriptionGroupID" : "921A802D",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "FDB56FF0",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Sponser some 🍺",
+              "displayName" : "Meetup Support Gold",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dev.xbow.CreateWithSwiftStoreKit2Demo.meetupSupportGold",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Create with Swift Napoli Meetup Support Gold",
+          "subscriptionGroupID" : "921A802D",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 4,

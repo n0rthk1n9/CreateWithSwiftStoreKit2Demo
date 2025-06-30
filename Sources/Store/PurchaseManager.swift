@@ -9,6 +9,8 @@ import StoreKit
 
 class PurchaseManager: ObservableObject {
     @Published var isMeetupPictureCustomer = false
+    @Published var starEmojiQuantity = 0
+    @Published var napoliEmojiQuantity = 0
 
     private var updatesTask: Task<Void, Never>?
 
@@ -25,13 +27,74 @@ class PurchaseManager: ObservableObject {
         case .unverified:
             return
         }
-        
-        Task { @MainActor in
-            isMeetupPictureCustomer = true
-        }
-        
-        await transaction.finish()
 
+        if case .consumable = transaction.productType {
+            if transaction.revocationDate == nil, transaction.revocationReason == nil {
+                switch transaction.productID {
+                case ProductID.starEmoji.rawValue:
+                    Task { @MainActor in
+                        starEmojiQuantity += transaction.purchasedQuantity
+                    }
+                case ProductID.napoliEmoji.rawValue:
+                    Task { @MainActor in
+                        napoliEmojiQuantity += transaction.purchasedQuantity
+                    }
+                default:
+                    return
+                }
+                await transaction.finish()
+            } else {
+                switch transaction.productID {
+                case ProductID.starEmoji.rawValue:
+                    Task { @MainActor in
+                        starEmojiQuantity -= transaction.purchasedQuantity
+                    }
+                case ProductID.napoliEmoji.rawValue:
+                    Task { @MainActor in
+                        napoliEmojiQuantity -= transaction.purchasedQuantity
+                    }
+                default:
+                    return
+                }
+            }
+        } else {
+            Task { @MainActor in
+                isMeetupPictureCustomer = true
+            }
+            await transaction.finish()
+        }
+    }
+
+    func status(
+        for statuses: [Product.SubscriptionInfo.Status],
+        ids: SubscriptionIDs
+    ) -> SubscriptionStatus {
+        let effectiveStatus = statuses.max { lhs, rhs in
+            let lhsStatus =
+                SubscriptionStatus(
+                    productID: lhs.transaction.unsafePayloadValue.productID,
+                    ids: ids
+                ) ?? .notSubscribed
+            let rhsStatus =
+                SubscriptionStatus(
+                    productID: rhs.transaction.unsafePayloadValue.productID,
+                    ids: ids
+                ) ?? .notSubscribed
+            return lhsStatus < rhsStatus
+        }
+        guard let effectiveStatus else {
+            return .notSubscribed
+        }
+
+        let transaction: Transaction
+        switch effectiveStatus.transaction {
+        case let .verified(trans):
+            transaction = trans
+        case .unverified:
+            return .notSubscribed
+        }
+
+        return SubscriptionStatus(productID: transaction.productID, ids: ids) ?? .notSubscribed
     }
 
     func checkForUnfinishedTransactions() async {
